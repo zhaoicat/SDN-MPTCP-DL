@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-06-08T15:45:10.336666",
+  "duration_seconds": 155.157321,
+  "statistics": {
+    "total": 7,
+    "passed": 6,
+    "partial": 0,
+    "failed": 1
+  },
+  "overall_status": "GOOD",
+  "detailed_results": [
+    {
+      "test": "环境检查",
+      "status": "PASSED",
+      "details": "4/4 模块可用"
+    },
+    {
+      "test": "文件完整性",
+      "status": "PASSED",
+      "details": "5/5 文件存在"
+    },
+    {
+      "test": "PyTorch/LSTM功能",
+      "status": "PASSED",
+      "details": "成功创建和运行LSTM模型"
+    },
+    {
+      "test": "演示模块",
+      "status": "PASSED",
+      "details": "2/2 模块可用"
+    },
+    {
+      "test": "Docker功能",
+      "status": "PASSED",
+      "details": "Docker完全可用"
+    },
+    {
+      "test": "网络仿真",
+      "status": "FAILED",
+      "details": "测试超时"
+    },
+    {
+      "test": "端到端集成",
+      "status": "PASSED",
+      "details": "最优路径: Path-1"
+    }
+  ]
+}

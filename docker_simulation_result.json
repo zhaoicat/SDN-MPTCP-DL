@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-06-08T15:31:19.323029",
+  "paths": [
+    {
+      "path_id": "path_1",
+      "bandwidth": 74.88861059624537,
+      "latency": 18.649675380338277,
+      "packet_loss": 0.04458698992670196,
+      "congestion": 0.7019798466736132
+    },
+    {
+      "path_id": "path_2",
+      "bandwidth": 25.048832124914632,
+      "latency": 38.058232634651155,
+      "packet_loss": 0.037016184981815484,
+      "congestion": 0.33289293767295425
+    },
+    {
+      "path_id": "path_3",
+      "bandwidth": 79.05962842532118,
+      "latency": 26.087278698362937,
+      "packet_loss": 0.03624450929360551,
+      "congestion": 0.9725996327469573
+    },
+    {
+      "path_id": "path_4",
+      "bandwidth": 48.060892953002124,
+      "latency": 48.89499785789379,
+      "packet_loss": 0.04372403080358858,
+      "congestion": 0.2837633628312024
+    }
+  ],
+  "lstm_predictions": [
+    {
+      "path": "path_1",
+      "performance_score": 0.507351279258728,
+      "recommendation": "good"
+    },
+    {
+      "path": "path_2",
+      "performance_score": 0.505706787109375,
+      "recommendation": "good"
+    },
+    {
+      "path": "path_3",
+      "performance_score": 0.5058336853981018,
+      "recommendation": "good"
+    },
+    {
+      "path": "path_4",
+      "performance_score": 0.5055737495422363,
+      "recommendation": "good"
+    }
+  ]
+}
