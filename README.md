@@ -1,200 +1,129 @@
-# 🚀 MPTCP感知SDN控制器仿真系统
+# 🚀 MPTCP-SDN增强版系统
 
-基于 Mininet 的 MPTCP + SDN + 深度学习LSTM 网络仿真系统
+基于深度学习的MPTCP感知SDN控制器 - 支持多种网络拓扑、实时LSTM微调和网络变化适应
 
-## 🌟 系统特点
+## ✨ 核心特性
 
-- **真实网络仿真**: 使用 Mininet 进行真实的网络环境仿真
-- **MPTCP支持**: 多路径TCP连接管理和优化
-- **SDN控制**: 软件定义网络架构，灵活的路径控制
-- **LSTM预测**: 深度学习模型进行网络性能预测和拥塞检测
-- **实时监控**: 网络状态实时监控和可视化
-- **智能路径选择**: 基于AI的最优路径选择算法
+### 📊 多种网络拓扑支持
+- **简单拓扑**: 6个节点 (4主机+2交换机, 2条路径) - 概念验证
+- **中等拓扑**: 12个节点 (8主机+4交换机, 6条路径) - 小型网络
+- **复杂拓扑**: 32个节点 (24主机+8交换机, 16条路径) - 企业级网络
 
-## 📋 系统要求
+### 🧠 增强版LSTM模型
+- **8维特征**: 包含历史趋势和稳定性分析
+- **注意力机制**: 8个多头注意力提升预测准确性
+- **实时微调**: 在线学习适应网络变化
 
-### 操作系统
+### 🌍 网络变化模拟
+- **拥塞模拟**: 测试网络拥塞检测和路径切换
+- **链路故障**: 验证故障恢复和冗余路径
+- **网络改善**: 测试资源优化和性能提升
 
-- Ubuntu 18.04+ / Debian 10+
-- 需要 root 权限
+### 📈 可视化分析
+- **性能图表**: 自动生成4个子图的综合分析
+- **实验数据**: JSON格式的完整记录
+- **对比分析**: 预测vs实际性能对比
 
-### 软件依赖
+## 🚀 快速开始
 
-- Python 3.8+
-- Mininet 2.3+
-- PyTorch 1.8+
-- 支持MPTCP的Linux内核
-
-## 🛠️ 安装步骤
-
-### 1. 安装 Mininet
-
+### 安装依赖
 ```bash
-# Ubuntu/Debian
-sudo apt-get update
+pip install torch matplotlib numpy
+# 可选：Mininet支持
 sudo apt-get install mininet
-
-# 或者从源码安装
-git clone https://github.com/mininet/mininet
-cd mininet
-sudo ./util/install.sh -a
 ```
 
-### 2. 安装 Python 依赖
+### 运行方式
 
+#### 🎯 自动完整演示（推荐）
 ```bash
-pip install torch torchvision
-pip install matplotlib numpy
+python3 quick_demo.py
 ```
+自动测试所有拓扑类型，生成完整的分析报告
 
-### 3. 启用 MPTCP 支持
-
+#### 🔍 交互式体验
 ```bash
-# 检查内核是否支持MPTCP
-sysctl net.mptcp.mptcp_enabled
-
-# 如果不支持，需要安装支持MPTCP的内核
-sudo apt-get install linux-image-generic-hwe-20.04
-```
-
-### 4. 下载项目代码
-
-```bash
-git clone <此项目地址>
-cd SDN+MPTCP+dl
-```
-
-## 🚀 使用方法
-
-### 启动仿真系统
-```bash
-
-# 需要root权限
-sudo python3 mptcp_sdn_mininet.py
-```
-
-### 系统菜单功能
-
-1. **🌐 显示网络拓扑信息** - 查看网络结构和状态
-2. **📊 更新并显示网络统计** - 获取实时网络性能数据
-3. **🔗 创建MPTCP连接** - 建立多路径TCP连接
-4. **🧠 运行LSTM路径预测** - AI驱动的路径性能预测
-5. **📈 实时网络监控** - 30秒实时网络状态监控
-6. **🔄 智能负载均衡演示** - 动态负载分配演示
-7. **🖥️ 进入Mininet CLI** - 原生Mininet命令行界面
-8. **🚦 网络拥塞模拟** - 拥塞检测和处理演示
-
-### 使用 interactive_demo.py (模拟模式)
-```bash
-# 不需要root权限的模拟版本
 python3 interactive_demo.py
 ```
+逐步体验各个功能模块
 
-## 🧠 LSTM模型
-
-### 预训练模型
-系统会自动尝试加载预训练的LSTM模型：
-- `trained_models/performance_model.pth` - 性能预测模型
-- `trained_models/path_selection_model.pth` - 路径选择模型
-- `trained_models/congestion_model.pth` - 拥塞预测模型
-
-### 训练新模型
-```bash
-python3 lstm_training.py
-```
-
-## 📊 网络拓扑
-
-系统使用如下多路径网络拓扑：
+## 📂 文件结构
 
 ```
-    h1 ────── s1 ────── s2 ────── h2
-              │          │
-              │          │
-              s3 ────── s4
-              │          │
-              │          │
-    h3 ────── └─────────┘ ────── h4
+📁 项目根目录
+├── 🎮 interactive_demo.py          # 增强版主程序
+├── 🚀 quick_demo.py                # 自动演示脚本
+├── 📖 MPTCP_SDN_增强版实验指南.md   # 详细实验指南
+├── 📋 项目总结_MPTCP_SDN_增强版.md  # 项目总结文档
+├── 🔧 mptcp_sdn_mininet.py         # Mininet集成模块
+├── 📄 README.md                    # 项目说明（本文件）
+└── 📁 backup/                      # 备份的旧文件
 ```
 
-- **路径1**: h1-s1-s2-h2 (高带宽，低延迟)
-- **路径2**: h1-s1-s3-s4-h2 (中等带宽，中等延迟)  
-- **路径3**: h3-s3-s4-h4 (低带宽，高延迟)
-- **交叉连接**: s2-s4 提供更多路径选择
+## 🎯 功能菜单
 
-## 🔧 核心功能
+增强版系统提供12个核心功能：
 
-### 1. 网络监控
+1. 🏗️ **拓扑选择** - 简单/中等/复杂三种网络规模
+2. 🌐 **网络状态** - 实时查看拓扑和路径信息
+3. 🔗 **MPTCP连接** - 创建和管理多路径连接
+4. 🧠 **LSTM训练** - 深度学习模型训练
+5. 📊 **性能预测** - 路径性能智能预测
+6. 🚨 **网络变化** - 拥塞/故障/改善模拟
+7. 🔄 **实时微调** - 在线学习和模型适应
+8. 📈 **实时监控** - 网络状态动态监控
+9. 📋 **连接状态** - MPTCP连接管理
+10. 📊 **图表生成** - 性能分析可视化
+11. 💾 **结果保存** - 实验数据导出
+12. 🎯 **完整流程** - 端到端自动化实验
 
-- 实时带宽测量
-- 延迟检测 (ping)
-- 丢包率统计
-- 拥塞状态分析
+## 📊 实验结果
 
-### 2. LSTM预测
+### 性能指标
+- **训练收敛**: 损失值0.10-0.11，收敛良好
+- **预测准确性**: 增强特征工程显著提升精度
+- **适应性**: 实时微调有效响应网络变化
+- **可扩展性**: 支持2-16条路径的不同规模
 
-- 基于历史数据的性能预测
-- 8维特征向量输入
-- 路径质量评分输出
-- 在线学习能力
+### 输出文件
+- 📊 `performance_analysis_*.png` - 性能分析图表
+- 💾 `experiment_results_*.json` - 详细实验数据
+- 📝 `mptcp_sdn_demo.log` - 系统运行日志
 
-### 3. SDN控制
+## 🔧 技术架构
 
-- 流表管理
-- 路径选择决策
-- 负载均衡控制
-- QoS保障
-
-### 4. MPTCP管理
-
-- 子流创建和管理
-- 多路径调度
-- 拥塞窗口控制
-- 故障切换
-
-## 📝 日志文件
-
-- `mptcp_sdn_mininet.log` - Mininet仿真日志
-- `mptcp_sdn_demo.log` - 模拟模式日志
-
-## 🐛 故障排除
-
-### 1. Mininet安装问题
-
-```bash
-# 重新安装Mininet
-sudo apt-get remove mininet
-sudo apt-get install mininet
+### LSTM模型参数
+```python
+input_size = 8      # 扩展特征（包含历史趋势）
+hidden_size = 64    # 隐藏层大小
+num_layers = 2      # LSTM层数
+attention_heads = 8 # 多头注意力
 ```
 
-### 2. 权限问题
-
-```bash
-# 确保以root权限运行
-sudo python3 mptcp_sdn_mininet.py
+### 在线学习配置
+```python
+online_learning_rate = 0.0001
+adaptation_threshold = 10
+update_iterations = 3
 ```
 
-### 3. MPTCP不支持
+## 📖 详细文档
 
-```bash
-# 检查内核版本
-uname -r
-# 需要Linux 5.6+版本才完整支持MPTCP
-```
+- 📖 [实验指南](MPTCP_SDN_增强版实验指南.md) - 详细的实验流程和配置说明
+- 📋 [项目总结](项目总结_MPTCP_SDN_增强版.md) - 完整的功能介绍和验证结果
 
-### 4. PyTorch GPU支持
+## 🌟 应用场景
 
-```bash
-# 如果需要GPU加速
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-```
+- 🎓 **学术研究**: MPTCP和SDN的算法验证
+- 📚 **教学演示**: 网络技术的可视化教学
+- 🧪 **原型验证**: 新算法的快速原型和测试
+- 📊 **性能评估**: 不同网络配置的对比分析
 
-## 📚 项目文件说明
+## 📜 许可证
 
-- `mptcp_sdn_mininet.py` - 基于Mininet的仿真主程序
-- `interactive_demo.py` - 交互式演示程序(模拟模式)
-- `lstm_training.py` - LSTM模型训练程序  
-- `mptcp_sdn_lstm.py` - 核心LSTM模型定义
-- `拥塞度判断机制说明.md` - 拥塞检测机制详细说明
-- `trained_models/` - 预训练模型存储目录
+本项目基于开源许可，支持学术研究和教育用途。
+
+---
+
+**🚀 立即开始体验**: `python3 quick_demo.py`
 

@@ -1,0 +1,72 @@
+{
+  "timestamp": "2025-06-08T22:24:34.201625",
+  "test_type": "mininet_network_test",
+  "connectivity_test": {
+    "h1-h2": {
+      "status": "failed",
+      "error": "/proc/0/ns/net: No such file or directory\n"
+    },
+    "h1-h3": {
+      "status": "failed",
+      "error": "/proc/0/ns/net: No such file or directory\n"
+    },
+    "h1-h4": {
+      "status": "failed",
+      "error": "/proc/0/ns/net: No such file or directory\n"
+    },
+    "h2-h3": {
+      "status": "failed",
+      "error": "/proc/0/ns/net: No such file or directory\n"
+    },
+    "h2-h4": {
+      "status": "failed",
+      "error": "/proc/0/ns/net: No such file or directory\n"
+    },
+    "h3-h4": {
+      "status": "failed",
+      "error": "/proc/0/ns/net: No such file or directory\n"
+    }
+  },
+  "bandwidth_test": {},
+  "switch_status": {
+    "s1": {
+      "status": "active",
+      "ports": [
+        "s1-eth1",
+        "s1-eth2",
+        "s1-eth3"
+      ]
+    },
+    "s2": {
+      "status": "active",
+      "ports": [
+        "s2-eth1",
+        "s2-eth2",
+        "s2-eth3"
+      ]
+    },
+    "s3": {
+      "status": "active",
+      "ports": [
+        "s3-eth1",
+        "s3-eth2",
+        "s3-eth3"
+      ]
+    },
+    "s4": {
+      "status": "active",
+      "ports": [
+        "s4-eth1",
+        "s4-eth2",
+        "s4-eth3",
+        "s4-eth4"
+      ]
+    }
+  },
+  "summary": {
+    "total_connectivity_tests": 6,
+    "successful_connections": 0,
+    "active_switches": 4,
+    "test_duration": "completed"
+  }
+}

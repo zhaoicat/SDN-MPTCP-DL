@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-06-08T22:12:15.098815",
+  "docker_mininet_simulation": {
+    "basic_networking": false,
+    "connectivity": false,
+    "mptcp_paths": []
+  },
+  "summary": {
+    "total_paths": 0,
+    "working_paths": 0,
+    "average_latency": 0,
+    "average_bandwidth": 0
+  }
+}

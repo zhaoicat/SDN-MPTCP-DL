@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-06-08T22:23:29.012357",
+  "network_topology": {
+    "hosts": [
+      "h1 (10.0.1.1)",
+      "h2 (10.0.2.1)",
+      "h3 (10.0.3.1)",
+      "h4 (10.0.4.1)"
+    ],
+    "switches": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "paths": [
+      "Path 1: h1-s1-s2-h2 (100Mbps, 10ms)",
+      "Path 2: h1-s1-s3-s4-h2 (50Mbps, 20ms)",
+      "Path 3: h3-s3-s4-h4 (20Mbps, 50ms)",
+      "Path 4: s2-s4 交叉连接 (30Mbps, 30ms)"
+    ]
+  },
+  "path_predictions": {
+    "path_1": 0.566912055015564,
+    "path_2": 0.5396941304206848,
+    "path_3": 0.49410566687583923,
+    "path_4": 0.5164926648139954
+  },
+  "optimal_paths": [
+    [
+      "path_1",
+      0.5738210082054138
+    ],
+    [
+      "path_2",
+      0.5408458709716797
+    ],
+    [
+      "path_4",
+      0.5195378661155701
+    ]
+  ],
+  "active_flows": 3,
+  "performance_summary": {
+    "total_bandwidth": 200,
+    "avg_latency": 27.5,
+    "avg_loss": 0.01,
+    "lstm_accuracy": 0.5293011292815208
+  }
+}

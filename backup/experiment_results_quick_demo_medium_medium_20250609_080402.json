@@ -1,0 +1,744 @@
+{
+  "experiment_info": {
+    "name": "quick_demo_medium",
+    "timestamp": "20250609_080402",
+    "topology_type": "medium",
+    "node_count": 12,
+    "use_mininet": false,
+    "mininet_available": true
+  },
+  "network_topology": {
+    "switches": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "hosts": [
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "h6",
+      "h7",
+      "h8"
+    ],
+    "links": [
+      [
+        "s1",
+        "s2",
+        "path_1"
+      ],
+      [
+        "s2",
+        "s3",
+        "path_2"
+      ],
+      [
+        "s3",
+        "s4",
+        "path_3"
+      ],
+      [
+        "s4",
+        "s1",
+        "path_4"
+      ]
+    ],
+    "node_count": 12
+  },
+  "training_history": [
+    {
+      "timestamp": "2025-06-09T08:03:58.982120",
+      "topology_type": "medium",
+      "num_epochs": 10,
+      "average_loss": 0.1295450396835804,
+      "final_loss": 0.11317550390958786
+    }
+  ],
+  "performance_metrics": [
+    {
+      "timestamp": "2025-06-09T08:03:59.003017",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 20.10837587167788,
+          "latency": 47.874572127926236,
+          "packet_loss": 0.02686936779324595,
+          "congestion": 0,
+          "prediction": 0.39935779571533203
+        },
+        "path_2": {
+          "bandwidth": 150,
+          "latency": 14.202228231507918,
+          "packet_loss": 0.03866393199907406,
+          "congestion": 0.6935959401458045,
+          "prediction": 0.4111038148403168
+        },
+        "path_3": {
+          "bandwidth": 73.18882254476073,
+          "latency": 30.435607249589342,
+          "packet_loss": 0.03632010964949545,
+          "congestion": 0.7204620535321803,
+          "prediction": 0.4003194272518158
+        },
+        "path_4": {
+          "bandwidth": 125.08118685380335,
+          "latency": 36.83370106377703,
+          "packet_loss": 0.035756243161789776,
+          "congestion": 0.3450145395888645,
+          "prediction": 0.4193421006202698
+        },
+        "path_5": {
+          "bandwidth": 60.539591476609594,
+          "latency": 21.542394627139483,
+          "packet_loss": 0.049113515768138265,
+          "congestion": 0.5053844913076027,
+          "prediction": 0.4072309136390686
+        },
+        "path_6": {
+          "bandwidth": 124.41152643936837,
+          "latency": 20.4302641028056,
+          "packet_loss": 0.06409680675532205,
+          "congestion": 0.3999216228367035,
+          "prediction": 0.4302898943424225
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 6,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:03:59.526227",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 18.681557015410363,
+          "latency": 46.25591989215372,
+          "packet_loss": 0.03091775991682849,
+          "congestion": 0,
+          "prediction": 0.40373045206069946
+        },
+        "path_2": {
+          "bandwidth": 150,
+          "latency": 14.313079970382667,
+          "packet_loss": 0.042837558580759896,
+          "congestion": 0.6137935060474424,
+          "prediction": 0.41561365127563477
+        },
+        "path_3": {
+          "bandwidth": 12.139478332985844,
+          "latency": 29.652952611416296,
+          "packet_loss": 0.1,
+          "congestion": 0.6250079327324056,
+          "prediction": 0.42712166905403137
+        },
+        "path_4": {
+          "bandwidth": 120.456265628458,
+          "latency": 37.697701754569444,
+          "packet_loss": 0.039455372135721666,
+          "congestion": 0.2688580422537659,
+          "prediction": 0.4120368957519531
+        },
+        "path_5": {
+          "bandwidth": 58.3696143290728,
+          "latency": 21.80976154801766,
+          "packet_loss": 0.053583200355141344,
+          "congestion": 0.46386539303154883,
+          "prediction": 0.4463568925857544
+        },
+        "path_6": {
+          "bandwidth": 128.98935610261637,
+          "latency": 21.229906216626166,
+          "packet_loss": 0.06363130746524157,
+          "congestion": 0.49126972154969084,
+          "prediction": 0.4047786295413971
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 2,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.038044",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 16.676056919521173,
+          "latency": 45.31066156451779,
+          "packet_loss": 0.02675546748325108,
+          "congestion": 0,
+          "prediction": 0.4208644926548004
+        },
+        "path_2": {
+          "bandwidth": 148.74092584707404,
+          "latency": 14.379760795617749,
+          "packet_loss": 0.04719989639753238,
+          "congestion": 0.6079576684100437,
+          "prediction": 0.4231354594230652
+        },
+        "path_3": {
+          "bandwidth": 12.1518899829173,
+          "latency": 29.915579746148392,
+          "packet_loss": 0.1,
+          "congestion": 0.6658949950683206,
+          "prediction": 0.4447002112865448
+        },
+        "path_4": {
+          "bandwidth": 119.85151402007796,
+          "latency": 36.843313015618754,
+          "packet_loss": 0.04289765994817046,
+          "congestion": 0.2978505959835885,
+          "prediction": 0.4040491282939911
+        },
+        "path_5": {
+          "bandwidth": 56.11743802557153,
+          "latency": 22.558129381209493,
+          "packet_loss": 0.05825047293926947,
+          "congestion": 0.4360164342235367,
+          "prediction": 0.4452723264694214
+        },
+        "path_6": {
+          "bandwidth": 127.26361702991332,
+          "latency": 21.88410412887778,
+          "packet_loss": 0.05920759424843119,
+          "congestion": 0.5055768625485717,
+          "prediction": 0.4090639352798462
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 8,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.561020",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 15.405441626006354,
+          "latency": 49.68852945488521,
+          "packet_loss": 0.018595265836735472,
+          "congestion": 0.10892386323509393,
+          "prediction": 0.4386265277862549
+        },
+        "path_2": {
+          "bandwidth": 147.9815501704702,
+          "latency": 13.03198725973131,
+          "packet_loss": 0.03036397477847024,
+          "congestion": 0.5916098187408251,
+          "prediction": 0.4266413152217865
+        },
+        "path_3": {
+          "bandwidth": 15.566961496436,
+          "latency": 29.71886268755209,
+          "packet_loss": 0.09237696082752489,
+          "congestion": 0.5719331039843617,
+          "prediction": 0.4400203227996826
+        },
+        "path_4": {
+          "bandwidth": 108.30503295698921,
+          "latency": 36.26369261577659,
+          "packet_loss": 0.06081003413246407,
+          "congestion": 0.5070246165708332,
+          "prediction": 0.4243637025356293
+        },
+        "path_5": {
+          "bandwidth": 50.80887307630401,
+          "latency": 24.4597851209891,
+          "packet_loss": 0.03109641997730811,
+          "congestion": 0.46552777269849704,
+          "prediction": 0.42119380831718445
+        },
+        "path_6": {
+          "bandwidth": 135.50628013015665,
+          "latency": 19.70766271579221,
+          "packet_loss": 0.08024920178771557,
+          "congestion": 0.6528871082647126,
+          "prediction": 0.4083968698978424
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 4,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.566174",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 14.198913605788054,
+          "latency": 49.662621772687494,
+          "packet_loss": 0.020844948440310398,
+          "congestion": 0.11426150007476232,
+          "prediction": 0.4217177927494049
+        },
+        "path_2": {
+          "bandwidth": 144.68727559227648,
+          "latency": 13.247651852749794,
+          "packet_loss": 0.036495120729573026,
+          "congestion": 0.4973175938759564,
+          "prediction": 0.4274138808250427
+        },
+        "path_3": {
+          "bandwidth": 17.46997280311788,
+          "latency": 27.84261553154947,
+          "packet_loss": 0.08680338234867946,
+          "congestion": 0.6375210344234443,
+          "prediction": 0.42402660846710205
+        },
+        "path_4": {
+          "bandwidth": 112.58858742122874,
+          "latency": 37.390089166027145,
+          "packet_loss": 0.06665895280836055,
+          "congestion": 0.5708162568769137,
+          "prediction": 0.4253852963447571
+        },
+        "path_5": {
+          "bandwidth": 49.72246474444192,
+          "latency": 26.105521337579233,
+          "packet_loss": 0.033757585586682466,
+          "congestion": 0.3897089815915109,
+          "prediction": 0.4406203627586365
+        },
+        "path_6": {
+          "bandwidth": 140.09569153426312,
+          "latency": 19.441799406656077,
+          "packet_loss": 0.09008308076973062,
+          "congestion": 0.6378440786550995,
+          "prediction": 0.42500734329223633
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 4,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.571356",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 11.915840383883907,
+          "latency": 47.99877157759296,
+          "packet_loss": 0.027061953821029723,
+          "congestion": 0.10393804584405289,
+          "prediction": 0.4144699275493622
+        },
+        "path_2": {
+          "bandwidth": 141.43774872886425,
+          "latency": 13.046501038148586,
+          "packet_loss": 0.027033250634418537,
+          "congestion": 0.4748671239657207,
+          "prediction": 0.414396733045578
+        },
+        "path_3": {
+          "bandwidth": 16.83174659285029,
+          "latency": 29.8101693622332,
+          "packet_loss": 0.09132123944499695,
+          "congestion": 0.5637979594070491,
+          "prediction": 0.4211544096469879
+        },
+        "path_4": {
+          "bandwidth": 115.72334074790973,
+          "latency": 35.62706779309306,
+          "packet_loss": 0.05795560544182142,
+          "congestion": 0.6045050430227332,
+          "prediction": 0.4167967736721039
+        },
+        "path_5": {
+          "bandwidth": 47.671179606117285,
+          "latency": 25.050379101618024,
+          "packet_loss": 0.034459910556157894,
+          "congestion": 0.45648462830816955,
+          "prediction": 0.4068528413772583
+        },
+        "path_6": {
+          "bandwidth": 137.84153482597313,
+          "latency": 18.625409429545794,
+          "packet_loss": 0.08490227598394537,
+          "congestion": 0.5868810455470513,
+          "prediction": 0.41556888818740845
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 4,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.576339",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 14.300255303825189,
+          "latency": 46.93495998623683,
+          "packet_loss": 0.021291822628687705,
+          "congestion": 0.10340963729721718,
+          "prediction": 0.4203829765319824
+        },
+        "path_2": {
+          "bandwidth": 137.63108823995023,
+          "latency": 12.52492400118011,
+          "packet_loss": 0.0200501263221955,
+          "congestion": 0.4511348216249505,
+          "prediction": 0.40557584166526794
+        },
+        "path_3": {
+          "bandwidth": 21.774607298046014,
+          "latency": 29.836575596096914,
+          "packet_loss": 0.08493687122691651,
+          "congestion": 0.6308023496679597,
+          "prediction": 0.40287676453590393
+        },
+        "path_4": {
+          "bandwidth": 120.60390258444889,
+          "latency": 34.86748252383104,
+          "packet_loss": 0.057708380249839035,
+          "congestion": 0.5804688180309264,
+          "prediction": 0.4126291275024414
+        },
+        "path_5": {
+          "bandwidth": 42.995896148849376,
+          "latency": 25.924351485312528,
+          "packet_loss": 0.03554527576074822,
+          "congestion": 0.4758172197298052,
+          "prediction": 0.4302123785018921
+        },
+        "path_6": {
+          "bandwidth": 136.59687684211602,
+          "latency": 18.73862886501891,
+          "packet_loss": 0.07734276788609007,
+          "congestion": 0.6783148593802305,
+          "prediction": 0.4037622809410095
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 4,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.581455",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 18.312132680991716,
+          "latency": 48.15339295802687,
+          "packet_loss": 0.025234146161516882,
+          "congestion": 0.02964746603729887,
+          "prediction": 0.4062179625034332
+        },
+        "path_2": {
+          "bandwidth": 133.28209045320793,
+          "latency": 13.693280286907063,
+          "packet_loss": 0.02252985553914983,
+          "congestion": 0.45709753301006345,
+          "prediction": 0.41288939118385315
+        },
+        "path_3": {
+          "bandwidth": 26.274294788240603,
+          "latency": 30.95496225240681,
+          "packet_loss": 0.0756774874685684,
+          "congestion": 0.7223954417824395,
+          "prediction": 0.41571709513664246
+        },
+        "path_4": {
+          "bandwidth": 123.33482491253939,
+          "latency": 35.541360385261484,
+          "packet_loss": 0.050445921087028216,
+          "congestion": 0.5225517737107149,
+          "prediction": 0.4092772901058197
+        },
+        "path_5": {
+          "bandwidth": 40.562228836624385,
+          "latency": 24.244214938658807,
+          "packet_loss": 0.03010256376471353,
+          "congestion": 0.4949164294455976,
+          "prediction": 0.4347173273563385
+        },
+        "path_6": {
+          "bandwidth": 132.7955782980472,
+          "latency": 19.40383489909143,
+          "packet_loss": 0.08174596373621855,
+          "congestion": 0.7150088980523508,
+          "prediction": 0.41148462891578674
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 4,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.586516",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 17.47361965171247,
+          "latency": 48.05051105604738,
+          "packet_loss": 0.017972699264325716,
+          "congestion": 0.09745061964707746,
+          "prediction": 0.4169197976589203
+        },
+        "path_2": {
+          "bandwidth": 128.66806391502197,
+          "latency": 15.174368549207461,
+          "packet_loss": 0.03002089893006267,
+          "congestion": 0.4857777414040232,
+          "prediction": 0.4253048002719879
+        },
+        "path_3": {
+          "bandwidth": 24.290609437440047,
+          "latency": 31.965970182113914,
+          "packet_loss": 0.08066190397203936,
+          "congestion": 0.8150788614979388,
+          "prediction": 0.43029722571372986
+        },
+        "path_4": {
+          "bandwidth": 125.14331665000219,
+          "latency": 35.49614183386866,
+          "packet_loss": 0.04912444522548233,
+          "congestion": 0.5206078857438399,
+          "prediction": 0.41729500889778137
+        },
+        "path_5": {
+          "bandwidth": 39.18546846771125,
+          "latency": 22.99931439410881,
+          "packet_loss": 0.02965456186580785,
+          "congestion": 0.5919929741023783,
+          "prediction": 0.4089633822441101
+        },
+        "path_6": {
+          "bandwidth": 137.18024419931388,
+          "latency": 21.0719351310805,
+          "packet_loss": 0.08313464052946927,
+          "congestion": 0.6410409927888526,
+          "prediction": 0.42064183950424194
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 4,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.591495",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 17.825592307009735,
+          "latency": 46.34671449637908,
+          "packet_loss": 0.00850526387373712,
+          "congestion": 0.10862001182182832,
+          "prediction": 0.42955368757247925
+        },
+        "path_2": {
+          "bandwidth": 128.16615437216785,
+          "latency": 14.910286649438687,
+          "packet_loss": 0.02939436106333833,
+          "congestion": 0.3880170955779023,
+          "prediction": 0.43365415930747986
+        },
+        "path_3": {
+          "bandwidth": 26.73621402523563,
+          "latency": 30.185723700135558,
+          "packet_loss": 0.07084334668885472,
+          "congestion": 0.8749701332495345,
+          "prediction": 0.4101937413215637
+        },
+        "path_4": {
+          "bandwidth": 124.09385980914078,
+          "latency": 35.11174024818115,
+          "packet_loss": 0.04634498309500033,
+          "congestion": 0.48394489423779474,
+          "prediction": 0.4484335482120514
+        },
+        "path_5": {
+          "bandwidth": 36.35258489730896,
+          "latency": 21.419216289357504,
+          "packet_loss": 0.03664167464642805,
+          "congestion": 0.6424018126329845,
+          "prediction": 0.4078478217124939
+        },
+        "path_6": {
+          "bandwidth": 134.72170919311165,
+          "latency": 20.270956471588843,
+          "packet_loss": 0.08274352536727113,
+          "congestion": 0.6211080232405113,
+          "prediction": 0.4220001697540283
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 4,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.596527",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 22.38419274122482,
+          "latency": 48.04782879715489,
+          "packet_loss": 0.015777768616389354,
+          "congestion": 0.07386386027857358,
+          "prediction": 0.41582924127578735
+        },
+        "path_2": {
+          "bandwidth": 129.66725897820393,
+          "latency": 16.244689513655022,
+          "packet_loss": 0.02400238230269093,
+          "congestion": 0.4597003469387396,
+          "prediction": 0.41303202509880066
+        },
+        "path_3": {
+          "bandwidth": 28.394694873963573,
+          "latency": 30.585917795405777,
+          "packet_loss": 0.0638890930259011,
+          "congestion": 0.9368949659128389,
+          "prediction": 0.43593665957450867
+        },
+        "path_4": {
+          "bandwidth": 124.91046389443026,
+          "latency": 35.34782415391325,
+          "packet_loss": 0.04597403525854819,
+          "congestion": 0.555394409589265,
+          "prediction": 0.43501046299934387
+        },
+        "path_5": {
+          "bandwidth": 38.71303570725765,
+          "latency": 22.736486220684903,
+          "packet_loss": 0.04461820169978809,
+          "congestion": 0.6192212318994555,
+          "prediction": 0.4241330027580261
+        },
+        "path_6": {
+          "bandwidth": 133.80339981652966,
+          "latency": 20.052363684686355,
+          "packet_loss": 0.07598296939622175,
+          "congestion": 0.6907536405296085,
+          "prediction": 0.44399645924568176
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 4,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.601461",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 22.384137497302923,
+          "latency": 48.606427506623376,
+          "packet_loss": 0.01887526476037842,
+          "congestion": 0.114361957515523,
+          "prediction": 0.4264677166938782
+        },
+        "path_2": {
+          "bandwidth": 128.85304421110845,
+          "latency": 16.701362422472034,
+          "packet_loss": 0.03183785853285517,
+          "congestion": 0.37576647272570807,
+          "prediction": 0.4077046811580658
+        },
+        "path_3": {
+          "bandwidth": 27.85120772711594,
+          "latency": 30.77080697644966,
+          "packet_loss": 0.0721703770107519,
+          "congestion": 0.9827602198437824,
+          "prediction": 0.41495710611343384
+        },
+        "path_4": {
+          "bandwidth": 120.14706763819947,
+          "latency": 36.65376349289205,
+          "packet_loss": 0.04703028706068005,
+          "congestion": 0.5761392532633116,
+          "prediction": 0.44026127457618713
+        },
+        "path_5": {
+          "bandwidth": 35.758946000146935,
+          "latency": 24.20108269393806,
+          "packet_loss": 0.052018773279824265,
+          "congestion": 0.6432509148170035,
+          "prediction": 0.4213981628417969
+        },
+        "path_6": {
+          "bandwidth": 137.6288424889688,
+          "latency": 20.205749709951014,
+          "packet_loss": 0.08265955973362933,
+          "congestion": 0.6789159119480654,
+          "prediction": 0.4116953909397125
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 4,
+      "use_mininet": false
+    },
+    {
+      "timestamp": "2025-06-09T08:04:00.606463",
+      "topology_type": "medium",
+      "node_count": 12,
+      "path_metrics": {
+        "path_1": {
+          "bandwidth": 26.342009624321896,
+          "latency": 49.063543577464195,
+          "packet_loss": 0.012596885126186785,
+          "congestion": 0.1345311566259521,
+          "prediction": 0.4219558835029602
+        },
+        "path_2": {
+          "bandwidth": 132.46161167590915,
+          "latency": 18.57837091549049,
+          "packet_loss": 0.02772214020383392,
+          "congestion": 0.36368903506273365,
+          "prediction": 0.41276684403419495
+        },
+        "path_3": {
+          "bandwidth": 32.260292374201654,
+          "latency": 30.92828950425366,
+          "packet_loss": 0.07792865261160663,
+          "congestion": 1,
+          "prediction": 0.4015859365463257
+        },
+        "path_4": {
+          "bandwidth": 121.9858813337303,
+          "latency": 34.76114609645715,
+          "packet_loss": 0.0498592023671145,
+          "congestion": 0.5362021729502894,
+          "prediction": 0.42037349939346313
+        },
+        "path_5": {
+          "bandwidth": 40.10631408741852,
+          "latency": 23.581988850307802,
+          "packet_loss": 0.06149569148205543,
+          "congestion": 0.6323754216072672,
+          "prediction": 0.41044002771377563
+        },
+        "path_6": {
+          "bandwidth": 138.33642150603418,
+          "latency": 18.219618018739546,
+          "packet_loss": 0.08658518328539067,
+          "congestion": 0.7133943118897828,
+          "prediction": 0.4301348328590393
+        }
+      },
+      "training_history_count": 1,
+      "online_updates_count": 4,
+      "use_mininet": false
+    }
+  ],
+  "summary": {
+    "total_training_sessions": 1,
+    "total_online_updates": 4,
+    "paths_monitored": 6,
+    "experiment_duration": 13
+  }
+}

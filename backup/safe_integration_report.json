@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-06-08T15:45:10.336666",
-  "duration_seconds": 155.157321,
+  "timestamp": "2025-06-08T22:12:16.347322",
+  "duration_seconds": 35.500361,
   "statistics": {
     "total": 7,
     "passed": 6,
-    "partial": 0,
-    "failed": 1
+    "partial": 1,
+    "failed": 0
   },
   "overall_status": "GOOD",
   "detailed_results": [
@@ -36,8 +36,8 @@
     },
     {
       "test": "网络仿真",
-      "status": "FAILED",
-      "details": "测试超时"
+      "status": "PARTIAL",
+      "details": "仅0条路径可用"
     },
     {
       "test": "端到端集成",

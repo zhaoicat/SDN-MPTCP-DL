@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-06-08T15:45:09.830466",
+  "timestamp": "2025-06-08T22:12:15.846392",
   "data_samples": 50,
   "predictions": 1,
   "best_path": "Path-1",
-  "average_score": 0.5018765330314636,
+  "average_score": 0.4662933349609375,
   "status": "success"
 }

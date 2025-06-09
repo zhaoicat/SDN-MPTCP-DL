@@ -354,14 +354,18 @@ def setup_mptcp_environment():
     """设置MPTCP环境"""
     info('*** 配置MPTCP环境\n')
     
+    # 清理旧的网络配置
+    info('*** 清理旧网络配置\n')
+    os.system('sudo mn -c > /dev/null 2>&1')
+    
     # 检查MPTCP内核支持
     try:
         result = subprocess.run(['sysctl', 'net.mptcp.mptcp_enabled'], 
                               capture_output=True, text=True)
         if result.returncode != 0:
             info('*** 启用MPTCP支持\n')
-            os.system('sudo sysctl -w net.mptcp.mptcp_enabled=1')
-            os.system('sudo sysctl -w net.mptcp.mptcp_path_manager=fullmesh')
+            os.system('sudo sysctl -w net.mptcp.mptcp_enabled=1 2>/dev/null || echo "MPTCP内核模块不可用，将使用标准TCP"')
+            os.system('sudo sysctl -w net.mptcp.mptcp_path_manager=fullmesh 2>/dev/null || echo "使用默认路径管理器"')
     except (subprocess.SubprocessError, OSError):
         info('*** MPTCP配置可能需要手动设置\n')
 
